@@ -21,7 +21,8 @@ void poseCallback(const nav_msgs::Odometry::ConstPtr &msg){
 
     transform.setRotation(q);
 
-    br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "base_link"));
+    br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", "base_link"));
+    br.sendTransform(tf::StampedTransform(tf::Transform(tf::Quaternion(0,0,0,1), tf::Vector3(0.1, 0.0, 0.2)), ros::Time::now(), "base_link", "base_laser"));
 }   
 
 int main(int argc, char** argv){

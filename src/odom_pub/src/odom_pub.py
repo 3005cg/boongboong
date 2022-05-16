@@ -40,7 +40,7 @@ def odom_pub():
 
         pubMsg = Odometry()
         pubMsg.header.stamp = rospy.Time.now()
-        pubMsg.header.frame_id = '/map'
+        pubMsg.header.frame_id = '/world'
         pubMsg.pose.pose.position.x = x
         pubMsg.pose.pose.position.y = y
         quat = tf.transformations.quaternion_from_euler(0.0,0.0,heading)
