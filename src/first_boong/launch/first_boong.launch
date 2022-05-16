@@ -1,0 +1,7 @@
+<launch>
+
+<node pkg="first_boong" type="boong_broadcaster" name="Broadcaster" output="screen"/>
+<node pkg="first_boong" type="boong_listener" name="Listener" output="screen"/>
+<node type="rviz" name="rviz" pkg="rviz" args="-d first_boong/rviz/config_file.rviz" />
+
+</launch>
