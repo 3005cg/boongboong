@@ -53,3 +53,5 @@ CATKIN_IGNORE
 src/local_planner_minsoo/.vscode/browse.vc.db
 src/local_planner_minsoo/.vscode/browse.vc.db-shm
 src/local_planner_minsoo/.vscode/browse.vc.db-wal
+.vscode/browse.vc.db
+.vscode/c_cpp_properties.json
