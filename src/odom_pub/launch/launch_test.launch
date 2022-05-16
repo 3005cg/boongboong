@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="odom_pub" type="odom_pub" name="node1"/>
+    <node pkg="odom_pub" type="tf_broadcaster" name="node2"/>
+</launch>
