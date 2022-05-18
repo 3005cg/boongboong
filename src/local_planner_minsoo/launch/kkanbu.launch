@@ -1,0 +1,10 @@
+<launch>
+
+	<node pkg="local_planner_minsoo" type="first_last_index" name="Input_goal" output="screen"/>
+
+	<node pkg="local_planner_minsoo" type="make_path" name="Cal_path" output="screen"/>
+
+	<node type="rviz" name="rviz" pkg="rviz" args="-d local_planner_minsoo/rviz/config_file.rviz" />
+
+
+</launch>
